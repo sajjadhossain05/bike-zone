@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker Zone</title>
+  <!-- tailwind and Daisy UI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google poopins fonr -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- praimary color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bike-bg-primary': 'rgba(231, 111, 81, 0.10)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- font style -->
+  <style>
+    .font-poopins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="font-poopins">
+
+  <header class="md:container md:mx-auto">
+
+    <!-- nav ver section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="grow">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>HOME</a></li>
+              <li><a>SHOPE</a></li>
+              <li><a>NEWS</a></li>
+              <li><a>CONTACT</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-3xl">BIKER ZONE</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu text-base menu-horizontal px-1">
+            <li><a>HOME</a></li>
+            <li><a>SHOPE</a></li>
+            <li><a>NEWS</a></li>
+            <li><a>CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn btn-error text-white py-4 px-12 bg-bike-primary">login</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- carousel and header saction -->
+    <div class="carousel w-full lg:h-[550px] mt-14 bg-bike-bg-primary">
+      <!-- slaider 1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-x-60 p-5 lg:p-24">
+          <div class="space-y-5 grow text-center lg:text-left">
+            <h2 class=" text-6xl lg:text-7xl font-bold">
+              Ride-on R15 V4
+              <br> with Smile
+            </h2>
+            <p class="grow">
+              Amet minim mollit non deserunt ullamco <br>
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-bike-primary text-white">Purchase</button>
+          </div>
+          <div class="grow">
+            <img src="./images/slider/bike1.png" class="w-full" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- slaider 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-x-60 p-5 lg:p-24">
+          <div class="space-y-5 grow lg:text-left text-center">
+            <h2 class="text-6xl lg:text-7xl font-bold">
+              Ride-on R15 V4
+              <br> with Smile
+            </h2>
+            <p class="grow">
+              Amet minim mollit non deserunt ullamco <br>
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-bike-primary text-white">Purchase</button>
+          </div>
+          <div class="grow">
+            <img src="./images/slider/bike2.png" class="w-full" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- slaider 3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-x-60 p-5 lg:p-24">
+          <div class="space-y-5 grow lg:text-left text-center">
+            <h2 class="text-6xl lg:text-7xl font-bold">
+              Ride-on R15 V4
+              <br> with Smile
+            </h2>
+            <p class="grow">
+              Amet minim mollit non deserunt ullamco <br>
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-bike-primary text-white">Purchase</button>
+          </div>
+          <div class="grow">
+            <img src="./images/slider/bike3.png" class="w-full" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- slaider 4 -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="flex flex-col lg:flex-row gap-x-60 p-5 lg:p-24">
+          <div class="space-y-5 grow lg:text-left text-center">
+            <h2 class="text-6xl
+             lg:text-7xl font-bold">
+              Ride-on R15 V4
+              <br> with Smile
+            </h2>
+            <p class="grow">
+              Amet minim mollit non deserunt ullamco <br>
+              est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit.
+            </p>
+            <button class="btn bg-bike-primary text-white">Purchase</button>
+          </div>
+          <div class="grow">
+            <img src="./images/slider/bike4.png" class="w-full" />
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
+
+
+</body>
+
+</html>
